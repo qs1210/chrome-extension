@@ -1,0 +1,51 @@
+{
+	"manifest_version": 2,
+	"name": "cleanurl",
+	"version": "1.0.0",
+	"description": "clearUrl",
+	"icons":
+	{
+		"16": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+	},
+	"commands": {
+		"clean-url-hash": {
+            "suggested_key": {
+              "default": "Ctrl+1",
+              "mac": "Ctrl+1"
+            },
+			"description": "cleanUrl"
+		  },
+		"open-gql": {
+            "suggested_key": {
+							"default": "Ctrl+3",
+							"mac": "Ctrl+3"
+            },
+			"description": "open gql url"
+		  },
+		"jump-to-local": {
+            "suggested_key": {
+							"default": "Ctrl+2",
+							"mac": "Ctrl+2"
+            },
+			"description": "jump to localhost"
+		  }
+
+	},
+	"browser_action": 
+	{
+		"default_icon": "img/icon.png",
+		"default_title": "好生意小插件",
+		"default_popup": "popup.html"
+	},
+	"permissions":
+	[
+		"declarativeContent",
+		"tabs"
+	],
+	"background":
+	{
+		"scripts": ["js/background.js"]
+	}
+}
