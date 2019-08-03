@@ -13,7 +13,7 @@
 // });
 
 chrome.commands.onCommand.addListener(function(command) {
-	
+
 	// chrome.tabs.create({url: 'https://www.baidu.com'});
 	// alert(chrome.tabs.location);
 
@@ -56,6 +56,10 @@ chrome.commands.onCommand.addListener(function(command) {
 				const url = tab.url;
 				if(url.indexOf("/hsy/") > -1) {
 					const reg = /(.*)(\/hsy\/)(.*)/.exec(url);
+					chrome.tabs.create({url: 'http://localhost:8080' + reg[2] + reg[3]});
+				}
+				else if(url.indexOf("/cc/") > -1) {
+					const reg = /(.*)(\/cc\/)(.*)/.exec(url);
 					chrome.tabs.create({url: 'http://localhost:8080' + reg[2] + reg[3]});
 				}
 			}
