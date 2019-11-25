@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>popup页</title>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<style>
-	/* body {
-		font-family: 'Microsoft Yahei';
-		width: 500px;
-		min-height: 100px;
-	}
-	a {margin-right: 10px;} */
-	</style>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' ">
 </head>
+
 <body>
-	<h1 style="white-space: nowrap;font-size: 14px;">
-		
-		好生意的简单的一个 url 跳转功能 :) &nbsp;&nbsp;
+	<div style="white-space: nowrap;font-size: 14px;">
+
+		<p>好生意的简单的一个 url 跳转功能 :) &nbsp;&nbsp;</p>
 
 		<div>
 			<p>输入以下地址 <a>chrome://extensions/shortcuts</a> 设置快捷键</p>
-			<p> 1. 可以跳转到 localhost </p>
-			<p> 2. 可以去除后边的 hash</p>
-			<p> 3. 可以跳转到localhost的graphiql</p>
+			<button id="toLocal"> 1. 可以跳转到 localhost </button>
+			<br />
+			<button id="clear"> 2. 可以去除后边的 hash</button>
+			<br />
+			<button id="grahiql"> 3. 可以跳转到localhost的graphiql</button>
 		</div>
-	</h1>
+	</div>
 </body>
+
+<script src="lib/jquery.js"></script>
+<script src="my.js"></script>
+
 </html>
