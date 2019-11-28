@@ -1,0 +1,10 @@
+.wrapper{
+    text-align: center;
+    margin: auto;
+}
+.button{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 30px;
+}
