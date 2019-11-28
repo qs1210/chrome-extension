@@ -6,6 +6,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' ">
+	<link rel="stylesheet" href="my.css">
 </head>
 
 <body>
@@ -13,13 +14,11 @@
 
 		<p>好生意的简单的一个 url 跳转功能 :) &nbsp;&nbsp;</p>
 
-		<div>
+		<div class="wrapper">
 			<p>输入以下地址 <a>chrome://extensions/shortcuts</a> 设置快捷键</p>
-			<button id="toLocal"> 1. 可以跳转到 localhost </button>
-			<br />
-			<button id="clear"> 2. 可以去除后边的 hash</button>
-			<br />
-			<button id="grahiql"> 3. 可以跳转到localhost的graphiql</button>
+			<button class="button" id="toLocal">jump local</button>
+			<button class="button" id="clear">clean hash</button>
+			<button class="button" id="grahiql">graphiql</button>
 		</div>
 	</div>
 </body>
