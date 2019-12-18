@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"name": "cleanurl",
+	"name": "hsy-url-switcher",
 	"version": "1.0.0",
 	"description": "clearUrl",
 	"icons":
@@ -33,7 +33,7 @@
 		  }
 
 	},
-	"browser_action": 
+	"browser_action":
 	{
 		"default_icon": "img/icon.png",
 		"default_title": "好生意小插件",
